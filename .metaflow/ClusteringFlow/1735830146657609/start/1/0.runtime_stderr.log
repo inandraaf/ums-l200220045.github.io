@@ -1,0 +1,66 @@
+[MFLOG|0|2025-01-02T15:02:27.255582Z|runtime|552a8c0e-8cdc-4784-ba1a-2dff317aada1]<flow ClusteringFlow step start> failed:
+[MFLOG|0|2025-01-02T15:02:27.258110Z|runtime|f104735f-2a43-4895-9e07-59e458b8176a]    Internal error
+[MFLOG|0|2025-01-02T15:02:27.259637Z|runtime|9b3f209f-fa53-4c32-81ca-8164829d9678]Traceback (most recent call last):
+[MFLOG|0|2025-01-02T15:02:27.259717Z|runtime|36dd783f-f117-4874-a417-9de12da7287e]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli.py", line 629, in main
+[MFLOG|0|2025-01-02T15:02:27.259763Z|runtime|eaa7d429-a7ea-4ca3-b37b-bbb3743b5dae]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2025-01-02T15:02:27.259789Z|runtime|e3381f7c-cd92-463e-8248-8dfeb587ed81]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.259811Z|runtime|4b068add-a622-4a6d-8a9d-c42635662e49]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2025-01-02T15:02:27.259837Z|runtime|a13fe518-fbb1-4760-97bd-3760d3eb651e]    return self.main(args, kwargs)
+[MFLOG|0|2025-01-02T15:02:27.339451Z|runtime|3ca24a63-3c7c-4dc5-b156-87ae1aa17f26]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.339618Z|runtime|8617daab-c8e3-4c87-9c6a-381729c64314]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2025-01-02T15:02:27.339659Z|runtime|14f96340-4145-46ac-a3f0-cdd4ec068f09]    rv = self.invoke(ctx)
+[MFLOG|0|2025-01-02T15:02:27.339690Z|runtime|c99ef336-782a-4bd7-a036-592b8b4f9882]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2025-01-02T15:02:27.339714Z|runtime|1458b455-52ac-49c3-9f2b-3f180d2d803c]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2025-01-02T15:02:27.339740Z|runtime|82558bc9-84fd-48ce-aa65-bbacfc17926e]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.339765Z|runtime|5c959d2f-6988-45da-9717-8b1e7c5581e6]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2025-01-02T15:02:27.339789Z|runtime|dd101108-1b77-4cc2-be40-0d9cd635ee6a]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2025-01-02T15:02:27.339813Z|runtime|ab7b8691-092a-4421-9dc4-1dc8eaf5cc78]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.339832Z|runtime|c0876684-8bcd-441b-891c-5288d20dfb8e]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2025-01-02T15:02:27.339855Z|runtime|2344d461-ada8-4218-96dd-b65e09db1898]    return callback(args, kwargs)
+[MFLOG|0|2025-01-02T15:02:27.339879Z|runtime|abdaa1e5-6363-41cb-aa82-a962fcaa950c]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2025-01-02T15:02:27.339902Z|runtime|80ac0b0b-d0e9-476a-9931-311a8d9b3d2b]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2025-01-02T15:02:27.339924Z|runtime|85499991-2797-4ca3-b1fa-14da4876ea33]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 178, in step
+[MFLOG|0|2025-01-02T15:02:27.339946Z|runtime|8874c1ad-bb93-4d00-b4aa-ccba15b5f568]    task.run_step(
+[MFLOG|0|2025-01-02T15:02:27.339969Z|runtime|c1649d2e-f665-41ac-804c-fda7e9f5bcf3]    ~~~~~~~~~~~~~^
+[MFLOG|0|2025-01-02T15:02:27.339991Z|runtime|fe369642-e6e8-487a-b514-50067d616713]        step_name,
+[MFLOG|0|2025-01-02T15:02:27.340013Z|runtime|b7f9dca6-d052-4666-86e4-a55d69735b7d]        ^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.340034Z|runtime|01dff2ad-07df-4e97-b437-02436d5d7976]    ...<6 lines>...
+[MFLOG|0|2025-01-02T15:02:27.340058Z|runtime|50deaea2-5e85-4161-904a-1c783bf0f394]        max_user_code_retries,
+[MFLOG|0|2025-01-02T15:02:27.340082Z|runtime|527ecaaf-0049-439f-9f4e-0d5b7614f821]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.340104Z|runtime|372e8e6f-d3eb-4cbc-99e4-636bfe02ffeb]    )
+[MFLOG|0|2025-01-02T15:02:27.340124Z|runtime|05f41df3-83b2-4441-8fff-3ca9b4b7044c]    ^
+[MFLOG|0|2025-01-02T15:02:27.340142Z|runtime|c5af4068-8bdb-4283-9627-0a67e83629e6]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2025-01-02T15:02:27.340164Z|runtime|5e0ee28c-65a6-495f-8c19-031f2b1b6396]    self._exec_step_function(step_func)
+[MFLOG|0|2025-01-02T15:02:27.340183Z|runtime|65bb40da-b125-4c39-b91c-bf535046ff20]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.340201Z|runtime|0d9f4102-b5c3-458d-bed2-fa7c2d7499a8]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2025-01-02T15:02:27.340218Z|runtime|142c49ba-3a83-4b6b-baa7-e17a043b19fd]    step_function()
+[MFLOG|0|2025-01-02T15:02:27.340236Z|runtime|84587cea-598f-475f-baf5-fe9ee0513959]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2025-01-02T15:02:27.340253Z|runtime|c849feed-30e9-4f53-966a-9e7a3474e338]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/main_flow.py", line 14, in start
+[MFLOG|0|2025-01-02T15:02:27.340270Z|runtime|3579e92b-0410-4c0a-bc8b-b1034ddb6f59]    self.data = pd.read_csv("dataset.csv")
+[MFLOG|0|2025-01-02T15:02:27.340289Z|runtime|c07b4e11-c69e-4927-81b4-1e4c5a7e43d3]                ~~~~~~~~~~~^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.340306Z|runtime|a37d8599-f180-4958-bf11-dc01d5837595]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+[MFLOG|0|2025-01-02T15:02:27.340324Z|runtime|cf2a5d65-e041-435e-b789-83121554ec9e]    return _read(filepath_or_buffer, kwds)
+[MFLOG|0|2025-01-02T15:02:27.340341Z|runtime|23ad8bda-a5ca-4f02-80c8-b341cf5c5d56]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+[MFLOG|0|2025-01-02T15:02:27.340359Z|runtime|4dd2be9f-bc0d-4da7-a9a9-68ec58277658]    parser = TextFileReader(filepath_or_buffer, kwds)
+[MFLOG|0|2025-01-02T15:02:27.340377Z|runtime|2f4901f7-870c-4e4e-bc72-05fecfe8ba44]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+[MFLOG|0|2025-01-02T15:02:27.340395Z|runtime|dddd2df8-7714-4b34-bb57-436af9dc20ba]    self._engine = self._make_engine(f, self.engine)
+[MFLOG|0|2025-01-02T15:02:27.340414Z|runtime|0b821aea-fcdf-42ad-aab5-ce3a27b55263]                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.340431Z|runtime|b34367d6-c1f7-4e90-9d82-2857103b7701]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+[MFLOG|0|2025-01-02T15:02:27.340449Z|runtime|49c1b20e-4eaa-4868-954e-e66eefe4ff0d]    self.handles = get_handle(
+[MFLOG|0|2025-01-02T15:02:27.340471Z|runtime|a4471788-0a22-4254-84ad-117f83870919]                   ~~~~~~~~~~^
+[MFLOG|0|2025-01-02T15:02:27.340493Z|runtime|d723f770-5f2f-48bc-9f7a-65fbd555ed84]        f,
+[MFLOG|0|2025-01-02T15:02:27.340516Z|runtime|71e05b2a-ccc5-4fa9-8731-390a4406f71d]        ^^
+[MFLOG|0|2025-01-02T15:02:27.340538Z|runtime|86c292eb-00d2-4d96-bb5e-6bcc9cf00ace]    ...<6 lines>...
+[MFLOG|0|2025-01-02T15:02:27.340560Z|runtime|7a31d76b-156e-4eb5-b0e3-26fc613ab796]        storage_options=self.options.get("storage_options", None),
+[MFLOG|0|2025-01-02T15:02:27.340581Z|runtime|61db784f-9c79-4b0c-8e0b-b9641457d8d6]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:02:27.340602Z|runtime|ed90642c-1e24-4b57-b1f5-5c6cdc8918b1]    )
+[MFLOG|0|2025-01-02T15:02:27.340625Z|runtime|d9c056b0-2b61-4b10-9474-db897064bf19]    ^
+[MFLOG|0|2025-01-02T15:02:27.340645Z|runtime|ebd5718c-0434-4878-b6b5-4764c0824463]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle
+[MFLOG|0|2025-01-02T15:02:27.340668Z|runtime|50e90892-bf4b-43f6-99ce-1b5170be21a5]    handle = open(
+[MFLOG|0|2025-01-02T15:02:27.340689Z|runtime|47b36a51-c29d-4e49-8716-72f1a628c726]        handle,
+[MFLOG|0|2025-01-02T15:02:27.340712Z|runtime|a2204b77-ad2c-4840-9b93-c925baa097c5]    ...<3 lines>...
+[MFLOG|0|2025-01-02T15:02:27.340732Z|runtime|80300f53-3df6-4655-a11b-24f90f25b80d]        newline="",
+[MFLOG|0|2025-01-02T15:02:27.340755Z|runtime|9443cd6c-9c35-4f2a-a207-bf20c90c4eaa]    )
+[MFLOG|0|2025-01-02T15:02:27.340775Z|runtime|334745a0-4671-4850-812e-f425c2f70373]FileNotFoundError: [Errno 2] No such file or directory: 'dataset.csv'
+[MFLOG|0|2025-01-02T15:02:27.340798Z|runtime|1eab2a38-44ed-4f2b-9698-8064381e31f8]
+[MFLOG|0|2025-01-02T15:02:27.341123Z|runtime|0f1fa138-a88e-4ff0-a7e3-7cc8714f1e81]Task failed.

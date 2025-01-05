@@ -1,0 +1,56 @@
+[MFLOG|0|2025-01-02T14:47:45.037518Z|runtime|2645d85b-9b2d-4ab2-af65-30f6395f783f]<flow ClusteringFlow step cluster_data> failed:
+[MFLOG|0|2025-01-02T14:47:45.069395Z|runtime|fe49e21d-3521-49b7-a9cc-8326b947c8a7]    Internal error
+[MFLOG|0|2025-01-02T14:47:45.070807Z|runtime|04600f22-abb5-4637-8220-2ac57ebeb77d]Traceback (most recent call last):
+[MFLOG|0|2025-01-02T14:47:45.070897Z|runtime|4d688dbe-52d6-4fc0-9ef5-ff1b9408779d]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli.py", line 629, in main
+[MFLOG|0|2025-01-02T14:47:45.070937Z|runtime|09c2f884-2ab5-49de-a6d5-b4e0c0d2eefe]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2025-01-02T14:47:45.070967Z|runtime|19e05023-7699-409f-979e-a39ee6604f31]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.070991Z|runtime|d29b108f-f94f-45e2-a5fe-030011fe1267]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2025-01-02T14:47:45.071018Z|runtime|4ad87d59-ad8d-4d5d-b5b7-50862ba32f15]    return self.main(args, kwargs)
+[MFLOG|0|2025-01-02T14:47:45.163326Z|runtime|8266137a-eaa9-4ba0-9340-e3a22a343e7b]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.163460Z|runtime|38f9ff74-c000-4101-9069-6d8705242061]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2025-01-02T14:47:45.163499Z|runtime|f60aeaf7-9683-451f-8e62-ffe03b624be3]    rv = self.invoke(ctx)
+[MFLOG|0|2025-01-02T14:47:45.163523Z|runtime|00c8ba84-250d-4399-a38f-eb61aefefdff]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2025-01-02T14:47:45.163546Z|runtime|70076879-08c1-4354-b257-6281104ec673]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2025-01-02T14:47:45.163575Z|runtime|bb0a31cb-ef20-4428-b4bd-61a549540988]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.163602Z|runtime|2a36192b-260c-4da3-a6a9-fd8ee7f12fde]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2025-01-02T14:47:45.163626Z|runtime|674ff6ea-b2d9-4b3e-b4c7-85c9986f8061]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2025-01-02T14:47:45.163649Z|runtime|5624ac8d-3752-4188-9b95-d5ec7b30bdc9]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.163672Z|runtime|20307f9f-60fa-4076-b483-168b8cd15823]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2025-01-02T14:47:45.163690Z|runtime|821f02f3-dd5f-4625-985f-159f3b578e8e]    return callback(args, kwargs)
+[MFLOG|0|2025-01-02T14:47:45.163713Z|runtime|35bedea5-2728-411e-9bd4-13abde55611d]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2025-01-02T14:47:45.163737Z|runtime|03652aa8-3a05-45b9-8c50-850363fb5f20]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2025-01-02T14:47:45.163761Z|runtime|b66e7784-c5c7-423e-b170-f58149a01a5a]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 178, in step
+[MFLOG|0|2025-01-02T14:47:45.163780Z|runtime|61fa1b18-c43f-4942-ad1c-f22cc1a0340a]    task.run_step(
+[MFLOG|0|2025-01-02T14:47:45.163802Z|runtime|1d5b2754-0020-40fa-a9c0-14d23d4ae9ad]    ~~~~~~~~~~~~~^
+[MFLOG|0|2025-01-02T14:47:45.163824Z|runtime|e013bc6f-fe14-4264-9ae6-0f729335732f]        step_name,
+[MFLOG|0|2025-01-02T14:47:45.163844Z|runtime|85029668-d79e-4701-955a-dbb520652a83]        ^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.163863Z|runtime|7c1d06b1-ef34-4832-a98c-b4d1884d65cf]    ...<6 lines>...
+[MFLOG|0|2025-01-02T14:47:45.163882Z|runtime|9de86619-0e23-45bc-aaa5-b05d319668b9]        max_user_code_retries,
+[MFLOG|0|2025-01-02T14:47:45.163900Z|runtime|7e4a4053-fc7f-452d-a246-f9d70df881ac]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.163919Z|runtime|5268f7dd-57ff-4ca8-b650-6ae51ea66c3d]    )
+[MFLOG|0|2025-01-02T14:47:45.163938Z|runtime|bd2c699d-f5bc-409a-9aa3-663ccf002d0b]    ^
+[MFLOG|0|2025-01-02T14:47:45.163956Z|runtime|e4a4d87d-1542-4a28-8e61-d1a1317d3825]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2025-01-02T14:47:45.163975Z|runtime|ba702193-9558-40a6-a042-6da6025e6031]    self._exec_step_function(step_func)
+[MFLOG|0|2025-01-02T14:47:45.163993Z|runtime|5390dce0-541c-4283-aca1-ea1d077ed9c7]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.164010Z|runtime|7f28f2fa-4fdf-4eaf-8908-7293462c3c57]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2025-01-02T14:47:45.164028Z|runtime|24fd2785-2df5-4673-ae8d-6a52ffbcf8e5]    step_function()
+[MFLOG|0|2025-01-02T14:47:45.164045Z|runtime|e51f2d5c-67ad-4f1a-ae94-b47e1fd49b17]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2025-01-02T14:47:45.164067Z|runtime|5133c335-14fa-4960-b2c4-e9ebc483b6c2]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/clustering_metaflow.py", line 46, in cluster_data
+[MFLOG|0|2025-01-02T14:47:45.164087Z|runtime|df8d0c25-d391-4377-bab6-74c6eb64b287]    self.df['cluster'] = kmeans.fit_predict(self.X_scaled)
+[MFLOG|0|2025-01-02T14:47:45.164107Z|runtime|c33a9240-e25c-4bdd-b226-b825c4ae8320]    ~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.164128Z|runtime|80c6aec3-c555-46bf-ad7b-4d95fb5f589b]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4311, in __setitem__
+[MFLOG|0|2025-01-02T14:47:45.164147Z|runtime|f73ab8fe-46ff-407c-8c0b-c5913128720b]    self._set_item(key, value)
+[MFLOG|0|2025-01-02T14:47:45.164164Z|runtime|ac787582-fd53-4f92-8e5a-8144228105e2]    ~~~~~~~~~~~~~~^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.164186Z|runtime|bf50e2bf-7601-4377-96a8-5ec74828c701]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4524, in _set_item
+[MFLOG|0|2025-01-02T14:47:45.164205Z|runtime|ac5002c9-6233-4030-8a0c-cc94dbe4e7e3]    value, refs = self._sanitize_column(value)
+[MFLOG|0|2025-01-02T14:47:45.164222Z|runtime|af7a4bb3-9a7b-461c-a386-a39b3ae5f3e6]                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.164239Z|runtime|d0671117-0c66-452e-8cd8-f3948caf692d]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 5266, in _sanitize_column
+[MFLOG|0|2025-01-02T14:47:45.164257Z|runtime|d0e3e09a-55b3-42e3-b7c1-03da2071bd5d]    com.require_length_match(value, self.index)
+[MFLOG|0|2025-01-02T14:47:45.164274Z|runtime|e5cd0579-0fb2-456e-aa69-08aec510dc4b]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:47:45.164292Z|runtime|3a771f94-d2a8-4c89-bc17-63382b59930c]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/core/common.py", line 573, in require_length_match
+[MFLOG|0|2025-01-02T14:47:45.164311Z|runtime|b2f220cb-2499-4aba-a77c-3c12d180b52e]    raise ValueError(
+[MFLOG|0|2025-01-02T14:47:45.164328Z|runtime|44a9343d-b68a-4045-9dcd-0d48132b9148]    ...<4 lines>...
+[MFLOG|0|2025-01-02T14:47:45.164346Z|runtime|85abbd04-a4f9-4ec7-adbc-7cdd0d589680]    )
+[MFLOG|0|2025-01-02T14:47:45.164363Z|runtime|ec0abe33-f98b-4675-b7e5-b9bceb6de1bb]ValueError: Length of values (10601) does not match length of index (10751)
+[MFLOG|0|2025-01-02T14:47:45.164382Z|runtime|c2ba72b9-ccf7-4ea6-a28d-acbe6116f2cb]
+[MFLOG|0|2025-01-02T14:47:45.165625Z|runtime|0e52f419-30f1-441f-8b9f-f52935dba5e8]Task failed.

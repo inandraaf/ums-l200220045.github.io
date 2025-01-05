@@ -1,0 +1,42 @@
+[MFLOG|0|2025-01-02T15:30:21.336613Z|runtime|d0c4355a-e812-4ea4-9492-b26f994c5d1f]<flow WhatsAppClusteringFlow step start> failed:
+[MFLOG|0|2025-01-02T15:30:21.339844Z|runtime|e4950a6b-9fb8-4cd2-a91a-c70e6295d983]    Internal error
+[MFLOG|0|2025-01-02T15:30:21.340975Z|runtime|0d70bd2b-a957-4a1c-98c2-efe7b429b6fc]Traceback (most recent call last):
+[MFLOG|0|2025-01-02T15:30:21.341038Z|runtime|93b7ddd7-2362-4a50-a5c0-ea0ce4ca87ec]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli.py", line 629, in main
+[MFLOG|0|2025-01-02T15:30:21.341074Z|runtime|fd5126e0-60ff-4ab2-85ed-05167117b6f4]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2025-01-02T15:30:21.341107Z|runtime|6ee02b2e-4b36-434a-8041-4e5694a42f8b]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:30:21.341133Z|runtime|2b7ed317-6d8a-4e4d-b52c-6827abca9dde]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2025-01-02T15:30:21.341162Z|runtime|554abdcf-ea70-4e83-afbc-9bc09207a213]    return self.main(args, kwargs)
+[MFLOG|0|2025-01-02T15:30:21.423284Z|runtime|ba6d6974-222c-4539-b737-afed2c5aea73]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:30:21.423423Z|runtime|ebd0402e-20db-4509-9d6b-65890357bbe2]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2025-01-02T15:30:21.423457Z|runtime|e0751ebc-a4a1-49af-a8f5-90e308aa9d40]    rv = self.invoke(ctx)
+[MFLOG|0|2025-01-02T15:30:21.423481Z|runtime|00724538-d6bc-4e37-b703-c4258d016db5]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2025-01-02T15:30:21.423505Z|runtime|43ac2365-5e17-4bbe-a8ea-5b15b7f8e504]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2025-01-02T15:30:21.423525Z|runtime|89f3182a-3e36-4818-9be6-deedbe3352eb]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2025-01-02T15:30:21.423546Z|runtime|0abc18b6-1b65-4d07-8d57-71b36232183b]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2025-01-02T15:30:21.423566Z|runtime|89d949e3-9bcc-433a-95a0-45fabeb7cf86]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2025-01-02T15:30:21.423585Z|runtime|4b0f3e01-2847-47c3-8c71-2709fed3eb42]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:30:21.423603Z|runtime|58cdc440-a29b-4f8c-ada4-da2eb058f24c]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2025-01-02T15:30:21.423622Z|runtime|194b6faf-d99f-474a-80a1-a55641043210]    return callback(args, kwargs)
+[MFLOG|0|2025-01-02T15:30:21.423640Z|runtime|c7d181c1-e1e2-4882-9a23-bdcf6896ad8d]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2025-01-02T15:30:21.423659Z|runtime|b4d3c8ad-9059-4833-a6c4-16433ddb068c]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2025-01-02T15:30:21.423676Z|runtime|42fa9440-1a08-4185-a59a-7a0937f368b9]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 178, in step
+[MFLOG|0|2025-01-02T15:30:21.423696Z|runtime|2418ba42-8480-4d5e-8fe3-d6177bd861cf]    task.run_step(
+[MFLOG|0|2025-01-02T15:30:21.423715Z|runtime|30f02ba6-9cce-457c-be9a-2c1ddd9a80d7]    ~~~~~~~~~~~~~^
+[MFLOG|0|2025-01-02T15:30:21.423737Z|runtime|39216efd-745b-4022-861b-4b04e38d0e0c]        step_name,
+[MFLOG|0|2025-01-02T15:30:21.423758Z|runtime|cb991482-138d-4129-b414-c2b5bb8bb82d]        ^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:30:21.423776Z|runtime|16e0c3fb-74c0-4e15-a396-ec6fd723b58e]    ...<6 lines>...
+[MFLOG|0|2025-01-02T15:30:21.423793Z|runtime|96b5490f-2fd7-4fd0-8686-3889c82b4982]        max_user_code_retries,
+[MFLOG|0|2025-01-02T15:30:21.423811Z|runtime|09b23568-0d38-41dd-bf1f-f29ecb5e8c5a]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:30:21.423829Z|runtime|4fb3e94c-09b3-4111-beaf-ae4bb1a946da]    )
+[MFLOG|0|2025-01-02T15:30:21.423848Z|runtime|7398a2eb-ac9d-45f8-b534-51aca616ccf7]    ^
+[MFLOG|0|2025-01-02T15:30:21.423866Z|runtime|7764e182-bd8f-47e6-93be-a29023c6842d]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2025-01-02T15:30:21.423883Z|runtime|67dabc72-de0a-4c85-91cb-48f3489a3540]    self._exec_step_function(step_func)
+[MFLOG|0|2025-01-02T15:30:21.423900Z|runtime|5049eb5e-33fe-47cc-9010-611fb82642d0]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:30:21.423917Z|runtime|743e555c-95e5-4245-b144-78d3e726fc7f]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2025-01-02T15:30:21.423934Z|runtime|1cb096dd-3e6a-4278-a010-72f06e5b4750]    step_function()
+[MFLOG|0|2025-01-02T15:30:21.423952Z|runtime|f569b6df-578e-4aed-a6f8-155a48fba336]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2025-01-02T15:30:21.423969Z|runtime|d1ef0d44-5ac6-49c8-8ec4-6116b49445bc]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/coba_lagi.py", line 42, in start
+[MFLOG|0|2025-01-02T15:30:21.423986Z|runtime|653c210a-62be-4b49-80e0-f8a26a6418b0]    raise ValueError("Log WhatsApp tidak mengandung pesan yang valid.")
+[MFLOG|0|2025-01-02T15:30:21.424003Z|runtime|7d50595a-d6bb-40f0-b32c-21e6fd1e15e2]ValueError: Log WhatsApp tidak mengandung pesan yang valid.
+[MFLOG|0|2025-01-02T15:30:21.424021Z|runtime|3b7aa316-8624-4732-910f-885fa75299c5]
+[MFLOG|0|2025-01-02T15:30:21.424312Z|runtime|22f18750-a9e3-4161-9c79-394af0587c58]Task failed.

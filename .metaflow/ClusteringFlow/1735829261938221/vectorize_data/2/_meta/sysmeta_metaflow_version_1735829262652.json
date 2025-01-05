@@ -1,0 +1,1 @@
+{"flow_id": "ClusteringFlow", "run_number": "1735829261938221", "step_name": "vectorize_data", "task_id": "2", "field_name": "metaflow_version", "type": "metaflow_version", "value": "2.13", "tags": ["attempt_id:0"], "user_name": "inandraashafardhana", "ts_epoch": 1735829262652}

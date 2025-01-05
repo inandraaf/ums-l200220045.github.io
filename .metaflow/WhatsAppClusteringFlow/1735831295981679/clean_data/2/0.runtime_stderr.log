@@ -1,0 +1,47 @@
+[MFLOG|0|2025-01-02T15:21:37.200049Z|runtime|9c2fa259-cf0e-48e7-b4ca-2ad91df5e0e0]<flow WhatsAppClusteringFlow step clean_data> failed:
+[MFLOG|0|2025-01-02T15:21:37.203912Z|runtime|181a9dda-8b97-475e-9d72-4dcf59a5c8a7]    Internal error
+[MFLOG|0|2025-01-02T15:21:37.205102Z|runtime|c07821f7-2bf4-4ce7-b44e-11e64556fe8b]Traceback (most recent call last):
+[MFLOG|0|2025-01-02T15:21:37.205142Z|runtime|fd4de5e1-5378-4bb0-b211-f33d8d300526]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli.py", line 629, in main
+[MFLOG|0|2025-01-02T15:21:37.205176Z|runtime|d89d9256-d202-4672-8935-a38aa8f12ffb]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2025-01-02T15:21:37.205206Z|runtime|2a9d1c33-0519-4d2c-b7f1-f1a7c6956696]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.205230Z|runtime|03bbe98e-cb33-44c5-92c4-d8cfa42260c5]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2025-01-02T15:21:37.205257Z|runtime|0447319d-7980-4f0f-85ae-420f27ba9aca]    return self.main(args, kwargs)
+[MFLOG|0|2025-01-02T15:21:37.287180Z|runtime|86f01265-02a6-43ba-ab53-8de012be1faf]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.287339Z|runtime|9bd874a7-71b9-432e-ba77-4b8a3a6645e9]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2025-01-02T15:21:37.287378Z|runtime|6bce8a9c-06aa-4a93-b663-61e94395a1c8]    rv = self.invoke(ctx)
+[MFLOG|0|2025-01-02T15:21:37.287408Z|runtime|99723f69-d787-4317-8114-7b0299f926f3]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2025-01-02T15:21:37.287441Z|runtime|f9caf3ee-3fa1-4405-88e4-24607e0db2e4]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2025-01-02T15:21:37.287467Z|runtime|ab48fbdd-9722-4b87-9a4b-a94a35881dd0]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.287496Z|runtime|e99dc65d-64d8-4ff2-a332-057b816287fd]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2025-01-02T15:21:37.287521Z|runtime|fb5d0ebb-eb7d-439f-8f2a-109198b6f5a0]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2025-01-02T15:21:37.287545Z|runtime|4254a9bd-65df-4502-bba5-9b018dc2c85f]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.287567Z|runtime|3e80f6e7-bbf1-440e-97a7-988b43fd6b52]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2025-01-02T15:21:37.287593Z|runtime|6c6d4388-7b8b-4dca-99d4-3e980cc59195]    return callback(args, kwargs)
+[MFLOG|0|2025-01-02T15:21:37.287616Z|runtime|a8ce58de-2da8-41d4-ac74-c5218c4d2ba7]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2025-01-02T15:21:37.287633Z|runtime|b65dd205-4f27-4548-96fc-7f76d37d2c1e]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2025-01-02T15:21:37.287655Z|runtime|7626de75-c744-4ccb-a679-28bdf039076f]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 178, in step
+[MFLOG|0|2025-01-02T15:21:37.287677Z|runtime|4e14b7cd-10e9-46f1-94d1-215538801b88]    task.run_step(
+[MFLOG|0|2025-01-02T15:21:37.287702Z|runtime|7f6571b0-bb6a-4db9-bb53-896171f6713f]    ~~~~~~~~~~~~~^
+[MFLOG|0|2025-01-02T15:21:37.287724Z|runtime|0f77c0f1-90ed-4de9-903d-2a912d713be5]        step_name,
+[MFLOG|0|2025-01-02T15:21:37.287749Z|runtime|3a3091fd-bae4-4206-97d0-a14fc591b533]        ^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.287770Z|runtime|9bb6469f-dc38-4590-9a44-66417a92ae2f]    ...<6 lines>...
+[MFLOG|0|2025-01-02T15:21:37.287794Z|runtime|15a18092-db38-4a23-b899-cf09dc215abf]        max_user_code_retries,
+[MFLOG|0|2025-01-02T15:21:37.287816Z|runtime|7b0a2708-3534-4f50-8fff-b9849b56da2d]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.287838Z|runtime|da20f7da-adf4-4827-b303-1c5384450d40]    )
+[MFLOG|0|2025-01-02T15:21:37.287861Z|runtime|5adc35b6-44e4-45eb-a270-b2d4dc4481a5]    ^
+[MFLOG|0|2025-01-02T15:21:37.287886Z|runtime|4e15cf38-2559-4cf0-bff7-5da4972aba87]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2025-01-02T15:21:37.287906Z|runtime|ef391332-9d6c-474c-bd2e-336692ce7c0a]    self._exec_step_function(step_func)
+[MFLOG|0|2025-01-02T15:21:37.287927Z|runtime|c3c0a77d-ffca-4980-8c44-5a9064ab3fc7]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.287951Z|runtime|4f6b29a1-7a00-40f1-a78d-4bdd29387b02]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2025-01-02T15:21:37.287972Z|runtime|688b0e14-40d3-4ea7-9048-bbb85e3ec49d]    step_function()
+[MFLOG|0|2025-01-02T15:21:37.287994Z|runtime|9da90574-9032-4e37-af12-bc3aa8b35b45]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2025-01-02T15:21:37.288017Z|runtime|9ae99cce-4c50-4147-8150-c31abe9e45ff]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/script_name.py", line 61, in clean_data
+[MFLOG|0|2025-01-02T15:21:37.288040Z|runtime|da31a023-7a4e-43b3-93c1-62c05017e4da]    self.data["cleaned_message"] = self.data["message"].apply(clean_text)
+[MFLOG|0|2025-01-02T15:21:37.288063Z|runtime|2c3aaf6d-bac4-4e73-9f5e-7b36926ec74d]                                   ~~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2025-01-02T15:21:37.288085Z|runtime|b06df5b1-c5fd-4c0d-bff2-7942d053b9e9]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+[MFLOG|0|2025-01-02T15:21:37.288108Z|runtime|4884dea9-2abb-4aab-876d-94befc937f90]    indexer = self.columns.get_loc(key)
+[MFLOG|0|2025-01-02T15:21:37.288129Z|runtime|114f2dbe-08c2-4679-b579-b157603abc8d]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/pandas/core/indexes/range.py", line 417, in get_loc
+[MFLOG|0|2025-01-02T15:21:37.288152Z|runtime|b9f1a1ba-47df-4f88-bc6b-5d65d71b75bd]    raise KeyError(key)
+[MFLOG|0|2025-01-02T15:21:37.288174Z|runtime|ec264f57-9da3-4f0e-b821-aa4e7cd04ced]KeyError: 'message'
+[MFLOG|0|2025-01-02T15:21:37.288195Z|runtime|6a44624c-e761-402f-83cf-f7778662e6c3]
+[MFLOG|0|2025-01-02T15:21:37.288563Z|runtime|7a8a5765-adec-461a-be1b-0390c7196bb9]Task failed.

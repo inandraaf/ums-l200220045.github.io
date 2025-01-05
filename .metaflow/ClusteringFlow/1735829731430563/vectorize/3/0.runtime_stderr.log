@@ -1,0 +1,58 @@
+[MFLOG|0|2025-01-02T14:55:33.314542Z|runtime|9af308c6-dcda-4a69-a3a9-ba13ea61f0a9]<flow ClusteringFlow step vectorize> failed:
+[MFLOG|0|2025-01-02T14:55:33.320151Z|runtime|4dea38e4-353b-4b99-bb9b-a7385d4eed47]    Internal error
+[MFLOG|0|2025-01-02T14:55:33.321877Z|runtime|1698f982-09bd-4709-b58d-3c30dc342867]Traceback (most recent call last):
+[MFLOG|0|2025-01-02T14:55:33.321967Z|runtime|b22d82b0-6988-4c52-b1bf-0dd530cf1abc]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli.py", line 629, in main
+[MFLOG|0|2025-01-02T14:55:33.322006Z|runtime|49ac38e5-d73d-4929-a1af-2c817d6eac61]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2025-01-02T14:55:33.322036Z|runtime|ebf94898-8098-4494-9699-1e6794187d2a]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.322061Z|runtime|8ef472b0-9d5f-4926-a20c-ee13e5f702f2]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2025-01-02T14:55:33.322086Z|runtime|24803e6d-8ec6-4ec8-9a94-36d2dd5243d1]    return self.main(args, kwargs)
+[MFLOG|0|2025-01-02T14:55:33.322109Z|runtime|dd36c438-40c6-4214-907b-5b12f549e652]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.322136Z|runtime|fe4e5ac4-c0d4-4c59-aeec-64aab1f5698f]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2025-01-02T14:55:33.322161Z|runtime|3764b144-6e7a-45c2-8105-735052069c45]    rv = self.invoke(ctx)
+[MFLOG|0|2025-01-02T14:55:33.322182Z|runtime|040d8da3-9e7c-4881-af29-2b936b9c6fa5]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2025-01-02T14:55:33.322207Z|runtime|b1aca36e-1313-4b2c-b85e-dc04568052ec]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2025-01-02T14:55:33.322229Z|runtime|063ce900-a133-4ee4-9d0f-c61a4ad9b76b]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.322254Z|runtime|98cb65c5-f3ac-412b-8fba-79b223dfd9d3]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2025-01-02T14:55:33.322276Z|runtime|85453503-96b1-4168-98c2-15b985b8664c]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2025-01-02T14:55:33.322297Z|runtime|76eab657-72d8-4a60-b8dc-6bd6b2c61f1e]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.322321Z|runtime|e8cbce94-8ec0-470b-ae25-da1134b87b67]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2025-01-02T14:55:33.322342Z|runtime|c6af3051-5e3e-480f-8c9a-cb4ecee74146]    return callback(args, kwargs)
+[MFLOG|0|2025-01-02T14:55:33.322362Z|runtime|4a393000-450c-4c0f-b8ca-0c81f38dc726]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2025-01-02T14:55:33.322385Z|runtime|154ba210-ca22-4819-80f4-624581f0680b]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2025-01-02T14:55:33.322405Z|runtime|ec381d37-6326-49f7-9513-9dc20833575e]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 178, in step
+[MFLOG|0|2025-01-02T14:55:33.322425Z|runtime|af7f9165-a532-4a5d-9508-91aec7038c4b]    task.run_step(
+[MFLOG|0|2025-01-02T14:55:33.322445Z|runtime|3849e0b3-3ac4-42a1-8d9b-ae43ef072494]    ~~~~~~~~~~~~~^
+[MFLOG|0|2025-01-02T14:55:33.322465Z|runtime|98cb30b2-a6f9-4f82-a02c-c86de8cbff8c]        step_name,
+[MFLOG|0|2025-01-02T14:55:33.322547Z|runtime|01fc67d7-a56e-485e-a793-f51444054a5e]        ^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.322569Z|runtime|9a48621f-8d54-4ff1-a2a0-d783568d9611]    ...<6 lines>...
+[MFLOG|0|2025-01-02T14:55:33.322588Z|runtime|32bca963-3472-4a4e-9f30-daca1aa9781e]        max_user_code_retries,
+[MFLOG|0|2025-01-02T14:55:33.322608Z|runtime|64ab414f-551c-4368-8b82-186f2fba1869]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.322633Z|runtime|6e181745-9099-48e4-a82f-29d18200932c]    )
+[MFLOG|0|2025-01-02T14:55:33.322655Z|runtime|a95572c0-8192-47a4-a50f-c827709adcb1]    ^
+[MFLOG|0|2025-01-02T14:55:33.322675Z|runtime|7f61d082-50ff-4e3b-b480-9d954c2b95fa]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 653, in run_step
+[MFLOG|0|2025-01-02T14:55:33.322826Z|runtime|3316a7c5-3736-4cd6-84e5-af7f640aabe5]    self._exec_step_function(step_func)
+[MFLOG|0|2025-01-02T14:55:33.322913Z|runtime|d470aa36-1a1c-4e4b-9139-75655bb2d8c9]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.323008Z|runtime|1cbd8b8d-cd17-4c3d-9261-c7df0921aebe]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2025-01-02T14:55:33.323071Z|runtime|1eda053f-3901-4955-a6cc-0e8483170e07]    step_function()
+[MFLOG|0|2025-01-02T14:55:33.323176Z|runtime|bfa80f4c-f029-4e26-b1ed-7f84edbe8c3a]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2025-01-02T14:55:33.323242Z|runtime|1ecd88ab-940c-4c3c-96d0-614106bd2aed]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/clustering.py", line 53, in vectorize
+[MFLOG|0|2025-01-02T14:55:33.323276Z|runtime|7c164f35-659e-46c6-a4e2-1e479d98d2f3]    self.X = vectorizer.fit_transform(self.df['cleaned_message'])
+[MFLOG|0|2025-01-02T14:55:33.323302Z|runtime|09c9254b-62e0-49b9-b4c1-7a6326d30a25]             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.323361Z|runtime|e69f0d74-161e-4810-9f73-b36d5d149d24]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/sklearn/feature_extraction/text.py", line 2104, in fit_transform
+[MFLOG|0|2025-01-02T14:55:33.323385Z|runtime|ac20a4de-5aa9-4233-8cc2-ef47f69af3b3]    X = super().fit_transform(raw_documents)
+[MFLOG|0|2025-01-02T14:55:33.323407Z|runtime|ad12776c-4c9a-4d52-bc44-0d7ba4483349]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/sklearn/base.py", line 1389, in wrapper
+[MFLOG|0|2025-01-02T14:55:33.323430Z|runtime|2445ccf1-e3bf-4fe8-be80-5bb2b738f060]    return fit_method(estimator, args, kwargs)
+[MFLOG|0|2025-01-02T14:55:33.403927Z|runtime|91719e4d-fcbc-43a4-a5da-0442e43fd16d]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/sklearn/feature_extraction/text.py", line 1376, in fit_transform
+[MFLOG|0|2025-01-02T14:55:33.404059Z|runtime|091c6bf6-17aa-4660-87fb-16cd1d4a414f]    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+[MFLOG|0|2025-01-02T14:55:33.404093Z|runtime|ebecd484-f6c6-418a-9501-589cd71e4304]                    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.404118Z|runtime|a2655baa-a19e-4adf-b170-0b977db1ddb1]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/sklearn/feature_extraction/text.py", line 1263, in _count_vocab
+[MFLOG|0|2025-01-02T14:55:33.404150Z|runtime|4ba8304b-1ae1-4da4-afad-9f222825fc8f]    for feature in analyze(doc):
+[MFLOG|0|2025-01-02T14:55:33.404174Z|runtime|df4c3aa8-b3c0-4b80-a77b-0b3618359dfc]                   ~~~~~~~^^^^^
+[MFLOG|0|2025-01-02T14:55:33.404196Z|runtime|9f75bfc8-a98d-4bc6-a7d3-77cb2a3c7f77]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/sklearn/feature_extraction/text.py", line 104, in _analyze
+[MFLOG|0|2025-01-02T14:55:33.404220Z|runtime|30bdeae2-3cc1-43b1-b0b7-6db6a688e9c7]    doc = preprocessor(doc)
+[MFLOG|0|2025-01-02T14:55:33.404240Z|runtime|65c2e573-063b-443d-8e6b-5ba145c3a07f]  File "/Users/inandraashafardhana/Documents/kuliah/semester5/TugasUAS/.venv/lib/python3.13/site-packages/sklearn/feature_extraction/text.py", line 62, in _preprocess
+[MFLOG|0|2025-01-02T14:55:33.404265Z|runtime|8bcdc296-c8e1-4920-9d13-9055370c31dd]    doc = doc.lower()
+[MFLOG|0|2025-01-02T14:55:33.404288Z|runtime|f7e89be5-26bc-41d1-9464-948f96a6c259]          ^^^^^^^^^
+[MFLOG|0|2025-01-02T14:55:33.404309Z|runtime|5479aeea-566f-4b89-8168-eb9a8298b6de]AttributeError: 'float' object has no attribute 'lower'
+[MFLOG|0|2025-01-02T14:55:33.404333Z|runtime|42e4c10e-4af1-41dc-a0eb-2660fc60265c]
+[MFLOG|0|2025-01-02T14:55:33.404689Z|runtime|b2641fb6-5041-4039-9324-183ee3103b08]Task failed.

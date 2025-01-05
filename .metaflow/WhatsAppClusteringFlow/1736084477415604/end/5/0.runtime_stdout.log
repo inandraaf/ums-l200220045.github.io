@@ -1,0 +1,5 @@
+[MFLOG|0|2025-01-05T13:41:21.324333Z|runtime|35d6b67f-b199-4e76-bd39-bb40e487fc5e]Flow finished successfully!
+[MFLOG|0|2025-01-05T13:41:21.324622Z|runtime|5f271379-80f2-4ff5-9df0-420b98695039]Top words per cluster:
+[MFLOG|0|2025-01-05T13:41:21.324670Z|runtime|ea6dd1ab-8936-49c7-8e05-86d0eb0778b2]Cluster 0: di, buat, ini
+[MFLOG|0|2025-01-05T13:41:21.411503Z|runtime|31a2066b-3178-4694-9868-4a8ab2755d63]Cluster 1: nek, aku, ya
+[MFLOG|0|2025-01-05T13:41:21.411611Z|runtime|75e22f85-fdfd-4b3f-ac1a-e669d6153827]Cluster 2: tak, sek, ya

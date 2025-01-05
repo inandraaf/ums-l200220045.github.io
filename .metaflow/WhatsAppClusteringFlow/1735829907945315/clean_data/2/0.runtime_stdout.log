@@ -1,0 +1,6 @@
+[MFLOG|0|2025-01-02T14:58:29.310002Z|runtime|8cc5f942-997c-46c5-884c-b794f520cb9a]Data cleaning completed. Sample: 0    Pesan dan panggilan terenkripsi secara endtoen...
+[MFLOG|0|2025-01-02T14:58:29.410497Z|runtime|d994fc68-1ec7-47fe-b483-a2124413dae6]1               Anda membuat grup PARTI 2024 ABANGKUH 
+[MFLOG|0|2025-01-02T14:58:29.410662Z|runtime|7d8ba51e-cf25-4775-a685-9ce671eae643]2     Nirot TIF 22 bergabung menggunakan undangan Anda
+[MFLOG|0|2025-01-02T14:58:29.410795Z|runtime|a0e38a31-ae8c-4bbc-a076-b3030247fec0]3           ReviTO bergabung menggunakan undangan Anda
+[MFLOG|0|2025-01-02T14:58:29.410832Z|runtime|eeed6ab5-6a43-4d49-ba2b-16d0c008eb87]4    Anda mengubah nama grup menjadi PJ PARTI 2024 ...
+[MFLOG|0|2025-01-02T14:58:29.410858Z|runtime|c5e5bf21-cb45-41d5-ac69-b7a00c0d4ad0]Name: cleaned_message, dtype: object
