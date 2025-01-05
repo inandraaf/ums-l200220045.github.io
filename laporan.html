@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Hasil Analisis Konten WA Grup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold text-blue-600 mb-4">Laporan Hasil Analisis Konten WA Grup</h1>
+            <p class="text-lg text-gray-700">Nama: Inandra Asha Fardhana</p>
+            <p class="text-lg text-gray-700">NIM: L200220045</p>
+        </header>
+
+        <!-- Hasil Analisis -->
+        <section class="bg-white shadow-lg rounded-lg p-8 mb-10 space-y-8">
+            <h2 class="text-3xl font-semibold text-gray-900">Inilah Hasil dari Analisis Konten WhatsApp Grup</h2>
+            
+            <!-- Deskripsi Kluster -->
+            <div class="space-y-6">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    <span class="font-semibold text-blue-500">Cluster 1:</span> Berisi pesan yang banyak mengandung kata-kata seperti 'di', 'buat', dan 'ini', yang menunjukkan pola diskusi tentang instruksi atau penjelasan yang sering digunakan dalam percakapan.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    <span class="font-semibold text-blue-500">Cluster 2:</span> Fokus pada percakapan yang lebih santai dengan penggunaan kata 'nek', 'aku', dan 'ya', menunjukkan adanya percakapan informal antar anggota grup.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    <span class="font-semibold text-blue-500">Cluster 3:</span> Banyak pesan yang mengandung kata 'tak', 'sek', dan 'ya', yang menunjukkan adanya penggunaan kata-kata serupa dalam konteks pernyataan atau kesepakatan dalam percakapan.
+                </p>
+            </div>
+
+            <!-- Tabel Hasil Cluster -->
+            <div class="overflow-x-auto bg-gray-50 rounded-lg shadow-md">
+                <table class="min-w-full table-auto text-left">
+                    <thead class="bg-gray-200 text-gray-700">
+                        <tr>
+                            <th class="px-6 py-3 text-lg font-semibold">Cluster</th>
+                            <th class="px-6 py-3 text-lg font-semibold">Kata Teratas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white hover:bg-gray-100">
+                            <td class="px-6 py-4 text-lg font-medium">Cluster 1</td>
+                            <td class="px-6 py-4 text-lg">di, buat, ini</td>
+                        </tr>
+                        <tr class="bg-gray-50 hover:bg-gray-100">
+                            <td class="px-6 py-4 text-lg font-medium">Cluster 2</td>
+                            <td class="px-6 py-4 text-lg">nek, aku, ya</td>
+                        </tr>
+                        <tr class="bg-white hover:bg-gray-100">
+                            <td class="px-6 py-4 text-lg font-medium">Cluster 3</td>
+                            <td class="px-6 py-4 text-lg">tak, sek, ya</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-sm text-gray-600">
+            <p>&copy; 2025 Inandra Asha Fardhana. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
